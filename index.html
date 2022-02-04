@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envelo - strona</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script src="js/App.js" defer type="module"></script>
+</head>
+<body>
+    <div class="cart">
+        <div class="info">
+            <h1>Envelo</h1>
+            <p>Możesz miec swoją przesyłkę w kilkanaście sekund. Rozpocznij klikając w przycisk.</p>
+        </div>
+        <div class="inputs hidden">
+            <div class="inputs__phone">
+                <label for="phone">Numer telefonu</label>
+                <input type="text" name="phone" id="phone" />
+            </div>
+            <div class="inputs__code">
+                <label for="code">Kod odbioru</label>
+                <input type="text" name="code" id="code" />
+            </div>
+        </div>
+        <div class="info--error"></div>
+        <button id="getPackageBtn">Odbierz paczkę</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+        <div class="info">
+            <h1>Paczka odebrana!</h1>
+            <p>Zrobiłeś to w czasie 10 sekund! Czy możemy zrobić dla Ciebie coś jeszcze?</p>
+        </div>
+        <div class="buttons">
+            <button id="endBtn">To wszystko na dziś</button>
+            <button id="getAnotherPackageBtn">Odbierz kolejną paczkę</button>
+        </div>
+    </div>
+</body>
+</html>

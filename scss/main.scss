@@ -1,0 +1,92 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(190, 183, 183);
+    width: Min(30rem, 100vw);
+    height: 25rem;
+    padding: 5rem;
+    .info{
+        color: black;
+        text-align: center;
+        h1{
+            text-transform: uppercase;
+            color: red;
+            font-size: 26px;
+            line-height: 3rem;
+            font-weight: 500;
+        }
+    }
+    .info--error{
+        text-align: center;
+        color:red;
+        font-size: 12px;
+    }
+    .inputs{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .inputs__phone,
+        .inputs__code{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            font-size: 11px;
+        }
+        input{
+            
+            line-height: 1.5rem;
+            border-style: none;
+        }
+    }
+    button{
+        padding: 1rem;
+    }
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.modal{
+    background-color: gray;
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: Min(30rem, 100vw);
+    height: 10rem;
+    padding: 2rem;
+    text-align: center;
+    z-index: 2;
+    border: 1px solid #000;
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.hidden{
+    visibility: hidden;
+}
